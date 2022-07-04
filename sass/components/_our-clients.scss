@@ -1,0 +1,50 @@
+/* our-clients component  */
+
+.our-clients {
+  &__list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: 0px;
+    margin-bottom: 94px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: 170px;
+    height: 90px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: map-get($colors, "primaryLight");
+    border: 1px solid map-get($colors, "ourClientsBorder");
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid map-get($colors, "accent");
+    }
+
+    &:hover > .our-clients__logo *,
+    &:hover {
+      fill: map-get($colors, "accent");
+    }
+  }
+
+  &__logo {
+    fill: map-get($colors, "secondary");
+    margin: auto;
+    height: 52px;
+    width: 170px;
+  }
+
+  &__header {
+    @extend .sectionHeaderFont;
+    margin-top: 0;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+}

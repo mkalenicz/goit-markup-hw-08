@@ -1,0 +1,84 @@
+/* footer component  */
+.footer {
+  background-color: map-get($colors, "footerBackground");
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__accent {
+    color: map-get($colors, "accent");
+  }
+
+  &__inline-container {
+    display: flex;
+  }
+
+  &__logo {
+    @include logoFont(map-get($colors, "primaryLight"));
+    flex-direction: row;
+  }
+
+  &__adress {
+    margin-right: -30px;
+  }
+  
+  &__adress > a:last-of-type {
+    margin-bottom: -9px;
+  }
+
+  &__link {
+    @extend .headerFooterLinkFont;
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    text-decoration: none;
+    color: map-get($colors, "secondary");
+
+    &:hover {
+      color: map-get($colors, "accent");
+    }
+  }
+
+  &__city-street {
+    @extend .adressCityStreetFont;
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 246px;
+    margin-right: 30px;
+  }
+
+  &__social-media {
+    @extend .footerHeaderFont;
+    margin-top: 12px;
+    margin-left: 171px;
+  }
+
+  &__social-header {
+    margin-bottom: 20px;
+  }
+
+  &__social-media-icon {
+    fill: map-get($colors, "primaryLight");
+    background-image: url(../images/circle_footer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    height: 44px;
+    width: 44px;
+  
+    &:hover {
+      background-image: url(../images/circle.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: auto;
+      height: 44px;
+      width: 44px;
+    }
+  
+  }
+}
+

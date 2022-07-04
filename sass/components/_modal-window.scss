@@ -1,0 +1,154 @@
+/* modal window  */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: map-get($colors, "primaryLight");
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+
+  &__close-btn {
+    position: absolute;
+    background-color: map-get($colors, "primaryLight");
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__icon {
+    fill: map-get($colors, "modalPrimary");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    @extend .modalTitleFont;
+    margin: 40px 40px 30px 40px;
+  }
+
+  &__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    &-icon {
+      position: absolute;
+      top: 15px;
+      left: 16px;
+      margin-top: 18px;
+    }
+  }
+
+  &__input-textarea {
+    @extend .modalInputTextAreaFont;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    outline: none;
+    resize: none;
+  }
+
+  &__label {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  &__check-box-container {
+    margin-top: 25px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label-text {
+    @extend .modalLabelFont;
+    margin-bottom: 4px;
+  }
+
+  &__text-checkbox {
+    @extend .modalCheckBoxFont;
+
+    &::before {
+      position: relative;
+      top: 3.5px;
+      margin-right: 7px;
+      display: inline-block;
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border: 1px solid map-get($colors, "modalPrimary");
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: map-get($colors, "accent");
+    cursor: pointer;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__submit-btn {
+    @extend .buttonFont;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: map-get($colors, "accent");
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      background-color: map-get($colors, "modalHover");
+    }
+  }
+  &__form {
+    & .modal__input:focus-within {
+      border: 1px solid map-get($colors, "accent");
+    }
+
+    & .modal__input-textarea:focus-within {
+      border: 1px solid map-get($colors, "accent");
+    }
+
+    & .modal__label:focus-within {
+      fill: map-get($colors, "accent");
+    }
+  }
+}
+
+.modal__form-policy:checked + .modal__text-checkbox::before {
+  background-color: map-get($colors, "accent");
+  border: none;
+  background-image: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

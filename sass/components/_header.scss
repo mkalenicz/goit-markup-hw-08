@@ -1,0 +1,38 @@
+/* header component */
+.header {
+  border-bottom: 1px solid map-get($colors, "headerBorder");
+  display: relative;
+
+  &__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // &__menu-mobile{
+  //   display: absolute;
+  //   top: 1px;
+  //   right: 1px;
+  //   // menu-mobile-icon
+  // }
+  // &__menu {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+    &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    @include logoFont(map-get($colors, "primary"));
+  }
+
+  &__accent {
+    color: map-get($colors, "accent");
+  }
+}

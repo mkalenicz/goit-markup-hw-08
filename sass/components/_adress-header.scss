@@ -1,0 +1,49 @@
+/* adress-header component */
+.adress-header {
+  margin-right: -30px;
+  display: flex;
+  align-items: center;
+
+  &_svg {
+    fill: map-get($colors, "secondary");
+    color: map-get($colors, "secondary");
+  }
+}
+
+.adress-header__svg {
+  margin-right: 10px;
+}
+
+.adress-header__item {
+  fill: map-get($colors, "secondary");
+  color: map-get($colors, "secondary");
+  display: flex;
+  align-items: center;
+
+  &:hover a {
+    color: map-get($colors, "accent");
+  }
+
+  &:hover > .adress-header__link *,
+  .adress-header__item:hover {
+    color: map-get($colors, "accent");
+  }
+
+  &:hover > .adress-header__svg *,
+  &:hover {
+    fill: map-get($colors, "accent");
+    cursor: pointer;
+  }
+}
+
+.adress-header__link {
+  @extend .headerFooterLinkFont;
+  margin-right: 30px;
+  text-decoration: none;
+  color: map-get($colors, "secondary");
+  fill: map-get($colors, "secondary");
+
+  &:hover {
+    color: map-get($colors, "accent");
+  }
+}

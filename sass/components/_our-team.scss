@@ -1,0 +1,71 @@
+/* our-team component  */
+.our-team {
+  background-color: map-get($colors, "sectionBackground");
+
+  &__list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 94px;
+  }
+  &__item {
+    text-align: center;
+    margin-left: 30px;
+    max-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: map-get($colors, "primaryLight");
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__social-media {
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    width: 206px;
+    margin-bottom: 30px;
+  }
+
+  &__job {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 16px;
+  }
+
+  &__name {
+    @extend .ourTeamNameFont;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    @extend .sectionHeaderFont;
+    margin-top: 0;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+
+  &__social-icon {
+    fill: map-get($colors, "secondary");
+    margin: auto;
+    height: 44px;
+    width: 44px;
+
+    &:hover {
+      fill: map-get($colors, "primaryLight");
+      background-image: url(../images/circle.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* nav component */
+.nav {
+  display: flex;
+  padding-left: 0px;
+  margin-left: -46px;
+  list-style: none;
+
+  &__item {
+    margin-left: 46px;
+  }
+
+  &__link {
+    @extend .navLinkFont;
+  }
+}
+
+
+
+

@@ -1,0 +1,87 @@
+/* banner component */
+.banner {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: map-get($colors, "footerBackground");
+  background-image: url("../images/bannerImgOverlay.png"),
+    url("../images/bannerImg_480x400.jpg");
+  background-position: center, center;
+  background-size: 480px 400px;
+  max-width: 480px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+
+  &__header {
+    @include bannerHeaderFont(26px);
+    margin: 0 auto;
+    max-width: 365px;
+    flex-basis: 365px;
+  }
+
+  &__button {
+    @extend .buttonFont;
+    border-radius: 4px;
+    text-align: center;
+    background-color: map-get($colors, "accent");
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  &__btn_wrapper {
+    flex-basis: 200px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url("../images/bannerImgOverlay.png"),
+      url("../images/bannerImg_960x800.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url("../images/bannerImgOverlay.png"),
+      url("../images/bannerImg_768x400.jpg");
+    background-size: 768px 400px;
+    max-width: 768px;
+    background-position: center, center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url("../images/bannerImgOverlay.png"),
+      url("../images/bannerImg_1536x800.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../images/bannerImgOverlay.png"),
+      url("../images/bannerImg.jpg");
+    background-size: 100% 600px;
+    max-width: 1600px;
+    background-position: center, center;
+
+    &__header {
+      @include bannerHeaderFont(44px);
+      margin: 0 auto;
+      max-width: 696px;
+      flex-basis: 696px;
+    }
+  }
+}

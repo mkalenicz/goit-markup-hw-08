@@ -1,0 +1,207 @@
+$colors: (
+  "primary": #212121,
+  "primaryLight": #ffffff,
+  "secondary": #757575,
+  "accent": #2196f3,
+  "footerBackground": #2f303a,
+  "sectionBackground": #f5f4fa,
+  "ourClientsBorder": #afb1b8,
+  "portfolioBorder": #eeeeee,
+  "portfolioDescriptionBackground": #2196f3e5,
+  "whatAreWeDoingDescriptionBackground": #2f303acc,
+  "modalPrimary": #000000,
+  "modalHover": #1976d2,
+  "backdrop": rgba(0, 0, 0, 0.2),
+  "headerBorder": #ececec,
+);
+
+.sectionHeaderFont {
+  color: map-get($colors, "primary");
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.whatAreWeDoingFont {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: map-get($colors, "primaryLight");
+}
+
+.headerFooterLinkFont {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@mixin logoFont($color) {
+  margin-right: 93px;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: Raleway;
+  text-decoration: none;
+  font-weight: 700;
+  color: $color;
+}
+
+.adressCityStreetFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: map-get($colors, "primaryLight");
+}
+
+
+.footerHeaderFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: map-get($colors, "primaryLight");
+}
+
+@mixin bannerHeaderFont($fontSize){
+// .bannerHeaderFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: map-get($colors, "primaryLight");
+  font-size: $fontSize;
+}
+
+// .bannerHeaderFontMobile {
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 900;
+//   text-align: center;
+//   color: map-get($colors, "primaryLight");
+//   font-size: 26px;
+// }
+
+.loremIpsumHeaderFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: map-get($colors, "primary");
+}
+
+.loremIpsumItemFont {
+  color: map-get($colors, "secondary");
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.buttonFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: map-get($colors, "primaryLight");
+}
+
+.buttonPortfolioFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.6;
+  text-align: center;
+}
+
+.modalTitleFont {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  color: map-get($colors, "modalPrimary");
+}
+
+.modalInputTextAreaFont {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.modalLabelFont{
+font-family: "Roboto";
+font-size: 12px;
+font-weight: 400;
+line-height: 1.16;
+text-align: left;
+}
+
+.modalCheckBoxFont{
+font-weight: 400;
+text-align: left;
+font-family: "Roboto";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: map-get($colors,'secondary');
+}
+
+.navLinkFont{
+color: map-get($colors,'primary');
+font-family: Roboto;
+font-weight: 500;
+font-size: 14px;
+line-height: 0.8;
+text-decoration: none;
+}
+
+.ourTeamNameFont{
+color: map-get($colors,'primary');
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+}
+
+.portfolioTitleFont{
+font-family: "Roboto";
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+color: map-get($colors,'primary');
+letter-spacing: 0.06em;
+}
+
+.portfolioShortDescriptionFont{
+font-family: "Roboto";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: map-get($colors,'secondary');
+}
+
+.portfolioDescriptionFont{
+font-family: "Roboto";
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+color: map-get($colors,'primaryLight');
+}
