@@ -40,6 +40,14 @@ $colors: (
   line-height: 1.71;
 }
 
+.mobileMenuFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+}
+
 @mixin logoFont($color) {
   margin-right: 93px;
   font-size: 26px;
@@ -60,7 +68,6 @@ $colors: (
   color: map-get($colors, "primaryLight");
 }
 
-
 .footerHeaderFont {
   font-family: "Roboto";
   font-style: normal;
@@ -70,8 +77,8 @@ $colors: (
   color: map-get($colors, "primaryLight");
 }
 
-@mixin bannerHeaderFont($fontSize){
-// .bannerHeaderFont {
+@mixin bannerHeaderFont($fontSize) {
+  // .bannerHeaderFont {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -140,68 +147,68 @@ $colors: (
   font-weight: 400;
 }
 
-.modalLabelFont{
-font-family: "Roboto";
-font-size: 12px;
-font-weight: 400;
-line-height: 1.16;
-text-align: left;
+.modalLabelFont {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  text-align: left;
 }
 
-.modalCheckBoxFont{
-font-weight: 400;
-text-align: left;
-font-family: "Roboto";
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-color: map-get($colors,'secondary');
+.modalCheckBoxFont {
+  font-weight: 400;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: map-get($colors, "secondary");
 }
 
-.navLinkFont{
-color: map-get($colors,'primary');
-font-family: Roboto;
-font-weight: 500;
-font-size: 14px;
-line-height: 0.8;
-text-decoration: none;
+.navLinkFont {
+  color: map-get($colors, "primary");
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.8;
+  text-decoration: none;
 }
 
-.ourTeamNameFont{
-color: map-get($colors,'primary');
-font-family: "Roboto";
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
+.ourTeamNameFont {
+  color: map-get($colors, "primary");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
-.portfolioTitleFont{
-font-family: "Roboto";
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-color: map-get($colors,'primary');
-letter-spacing: 0.06em;
+.portfolioTitleFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: map-get($colors, "primary");
+  letter-spacing: 0.06em;
 }
 
-.portfolioShortDescriptionFont{
-font-family: "Roboto";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
-color: map-get($colors,'secondary');
+.portfolioShortDescriptionFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: map-get($colors, "secondary");
 }
 
-.portfolioDescriptionFont{
-font-family: "Roboto";
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.55;
-color: map-get($colors,'primaryLight');
+.portfolioDescriptionFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: map-get($colors, "primaryLight");
 }

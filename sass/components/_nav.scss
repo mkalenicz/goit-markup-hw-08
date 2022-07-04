@@ -1,6 +1,6 @@
 /* nav component */
 .nav {
-  display: flex;
+  display: none;
   padding-left: 0px;
   margin-left: -46px;
   list-style: none;
@@ -14,6 +14,8 @@
   }
 }
 
-
-
-
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}

@@ -1,7 +1,7 @@
 /* adress-header component */
 .adress-header {
   margin-right: -30px;
-  display: flex;
+  display: none;
   align-items: center;
 
   &_svg {
@@ -45,5 +45,27 @@
 
   &:hover {
     color: map-get($colors, "accent");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adress-header {
+    display: flex;
+    margin-right: 0px;
+    flex-direction: column;
+    &__link {
+      margin-right: 15px;
+    }
+    &__item {
+      width: 171px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-header {
+    display: flex;
+    margin-right: -30px;
+    flex-direction: row;
   }
 }

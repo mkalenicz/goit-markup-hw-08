@@ -4,7 +4,8 @@
   display: relative;
 
   &__container {
-    width: 1200px;
+    // width: 1200px;
+    width: 460px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -23,16 +24,60 @@
   //   align-items: center;
   // }
 
-    &__menu {
+  &__menu-toggle {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  &__menu-mobile {
+    margin-right: 23px;
+
+    // display: none;
+  }
+
+  &__menu {
     display: flex;
     align-items: center;
   }
 
   &__logo {
+    margin-left: 15px;
     @include logoFont(map-get($colors, "primary"));
   }
 
   &__accent {
     color: map-get($colors, "accent");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__menu-mobile {
+      display: none;
+    }
+
+    &__container {
+      width: 768px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__menu-mobile {
+      display: none;
+    }
+
+    &__container {
+      width: 1200px;
+    }
+
+    &__logo {
+      margin-left: 0;
+    }
   }
 }
