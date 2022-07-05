@@ -32,6 +32,9 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    &:hover {
+      fill: map-get($colors, "accent");
+    }
   }
   &__menu-mobile {
     margin-right: 23px;

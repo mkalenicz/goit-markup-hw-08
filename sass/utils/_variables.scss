@@ -48,6 +48,32 @@ $colors: (
   line-height: 1.17;
 }
 
+.mobileAdressPhoneFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+}
+
+.mobileAdressMailFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.mobileSocialsLinkFont {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+  color: map-get($colors, "accent");
+}
+
 @mixin logoFont($color) {
   margin-right: 93px;
   font-size: 26px;
