@@ -4,26 +4,30 @@
 
   &__list {
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
     list-style: none;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
   }
   &__item {
     text-align: center;
-    margin-left: 30px;
-    max-width: 270px;
-    flex-basis: calc((100% - 90px) / 4);
+    max-width: 450px;
     background-color: map-get($colors, "primaryLight");
     border-radius: 4px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    padding-bottom: 24px;
+    margin-bottom: 30px;
   }
 
+  &__photo {
+    width: 450px;
+  }
   &__social-media {
     cursor: pointer;
     margin: auto;
@@ -32,7 +36,6 @@
     align-items: center;
     height: 44px;
     width: 206px;
-    margin-bottom: 30px;
   }
 
   &__job {
@@ -50,8 +53,8 @@
   &__header {
     @extend .sectionHeaderFont;
     margin-top: 0;
-    padding-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 30px;
   }
 
   &__social-icon {
@@ -66,6 +69,58 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team {
+    &__list {
+      margin-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    &__item {
+      margin-top: 30px;
+      margin-left: 30px;
+      max-width: 354px;
+      flex-basis: calc((100% - 30px) / 2);
+      margin-bottom: 0;
+    }
+
+    &__photo {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    &__list {
+      margin-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      padding-bottom: 94px;
+    }
+
+    &__item {
+      margin-left: 30px;
+      max-width: 270px;
+      flex-basis: calc((100% - 90px) / 4);
+      margin-bottom: 0;
+    }
+
+    &__photo {
+      width: 270px;
+    }
+
+    &__header {
+      padding-top: 94px;
+      margin-bottom: 50px;
     }
   }
 }

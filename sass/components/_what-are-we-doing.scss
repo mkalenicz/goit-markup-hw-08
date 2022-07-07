@@ -1,6 +1,7 @@
 /* what-are-we-doing component */
 .what-are-we-doing {
-  display: flex;
+  // display: flex;
+  display: none;
   justify-content: center;
   margin-bottom: 0;
 
@@ -51,5 +52,11 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom-left-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-are-we-doing {
+    display: flex;
   }
 }
