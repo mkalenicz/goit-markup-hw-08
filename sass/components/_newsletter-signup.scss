@@ -1,12 +1,14 @@
 /* newsletter-signup component  */
 .newsletter-signup {
   @extend .footerHeaderFont;
-  margin-top: 12px;
-  margin-left: 78px;
+  text-align: center;
+  margin: 0 auto;
 
   &__form {
-    margin: auto;
     display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__input {
@@ -14,7 +16,7 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -24,8 +26,8 @@
 
   &__button {
     @extend .buttonFont;
-    margin-top: 44px;
-    margin-left: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
     background: map-get($colors, "accent");
     border-radius: 4px;
     width: 200px;
@@ -37,5 +39,92 @@
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: right 28px bottom 13px;
+  }
+}
+
+.newsletter-signup-tablet {
+  display: none;
+
+  @extend .footerHeaderFont;
+  text-align: center;
+  margin: 0 auto;
+
+  &__form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__input {
+    color: map-get($colors, "primaryLight");
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 450px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-family: inherit;
+  }
+
+  &__button {
+    @extend .buttonFont;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: map-get($colors, "accent");
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    padding-right: 24px;
+    background-image: url(../images/icon_send.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 28px bottom 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter-signup {
+    display: none;
+  }
+
+  .newsletter-signup-tablet {
+    margin-top: 60px;
+    display: block;
+
+    &__label {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter-signup-tablet {
+    display: none;
+  }
+  .newsletter-signup {
+    display: block;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 78px;
+
+    &__input {
+      width: 358px;
+    }
+
+    &__form {
+      flex-direction: row;
+      justify-content: left;
+    }
+
+    &__button {
+      margin: 0;
+      margin-top: 44px;
+      margin-left: 12px;
+    }
   }
 }

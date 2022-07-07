@@ -75,7 +75,13 @@ img {
   align-items: center;
   height: 44px;
   width: 206px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-social-media {
+    margin-bottom: 30px;
+  }
 }
 
 .is-hidden {
