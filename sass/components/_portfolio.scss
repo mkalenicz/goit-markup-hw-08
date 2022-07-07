@@ -1,7 +1,14 @@
 /* portfolio component  */
 
 .portfolio {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+
+  &__tablet-img {
+    display: none;
+  }
+  &__desktop-img {
+    display: none;
+  }
 
   &__list {
     padding-bottom: -30px;
@@ -9,7 +16,7 @@
     margin-bottom: 0;
     list-style: none;
     padding-left: 0px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     margin-left: -30px;
     justify-content: space-between;
@@ -39,7 +46,6 @@
 
 .portfolio__item-box {
   width: 100%;
-  flex-basis: calc((100% - 60px) / 3);
   background-color: map-get($colors, "primaryLight");
   border: 1px solid map-get($colors, "portfolioBorder");
   position: relative;
@@ -56,8 +62,7 @@
   position: relative;
   margin-left: 30px;
   margin-bottom: 30px;
-  max-width: 370px;
-  flex-basis: calc((100% - 60px) / 3);
+  width: 450px;
   background-color: map-get($colors, "primaryLight");
   border: 1px solid map-get($colors, "portfolioBorder");
   overflow: hidden;
@@ -68,7 +73,7 @@
   }
 
   &-description {
-    padding: 49px 45px 49px 24px;
+    padding: 77px 24px 77px 24px;
     position: absolute;
     top: 0;
     left: 0;
@@ -81,5 +86,64 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    &__list {
+      display: flex;
+    }
+    &__mobile-img {
+      display: none;
+    }
+    &__tablet-img {
+      display: block;
+    }
 
+    &__item {
+      max-width: 354px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
 
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .portfolio__item-description {
+    padding: 49px 45px 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-bottom: 94px;
+    &__list {
+      display: flex;
+    }
+    &__tablet-img {
+      display: none;
+    }
+
+    &__desktop-img {
+      display: block;
+    }
+
+    &__mobile-img {
+      display: none;
+    }
+
+    &__item-box {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__item {
+      max-width: 370px;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__item:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  .portfolio__item-description {
+    padding: 49px 45px 49px 24px;
+  }
+}

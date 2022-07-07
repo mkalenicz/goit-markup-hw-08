@@ -20,7 +20,6 @@
   </head>
 
   <body>
-  
     <!-- Header -->
     <header class="header">
       <div class="header__container">
@@ -30,28 +29,46 @@
               ><span class="header__accent">Web</span>Studio</a
             >
           </p>
+
           <nav>
-              <ul class="nav">
+            <ul class="nav">
               <li class="nav__item">
                 <a class="nav__link" href="./index.html" title="Agencja"
                   >Agencja</a
                 >
               </li>
               <li class="nav__item">
-                <a class="nav__link active" href="./portfolio.html" title="Portfolio"
+                <a
+                  class="nav__link active"
+                  href="./portfolio.html"
+                  title="Portfolio"
                   >Portfolio</a
                 >
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="" title="Kontakt">Kontakt</a></li>
+                <a class="nav__link" href="" title="Kontakt">Kontakt</a>
+              </li>
             </ul>
           </nav>
         </div>
+
+        <div class="header__menu-mobile">
+          <button
+            class="header__menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24" viewBox="0 0 20 20">
+              <use href="./images/icons.svg#menu-mobile-icon"></use>
+            </svg>
+          </button>
+        </div>
+
         <adress class="adress-header">
           <div class="adress-header__item">
             <!-- email  -->
             <svg
-            class="adress-header__svg"
+              class="adress-header__svg"
               width="16"
               height="12"
               viewBox="0 0 16 12"
@@ -62,12 +79,14 @@
                 <use href="./images/icons.svg#icon-mail"></use>
               </a>
             </svg>
-            <a class="adress-header__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="adress-header__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </div>
           <div class="adress-header__item">
             <!-- phone -->
             <svg
-            class="adress-header__svg"
+              class="adress-header__svg"
               width="10"
               height="16"
               viewBox="0 0 10 16"
@@ -79,7 +98,9 @@
               </a>
             </svg>
 
-            <a class="adress-header__link" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="adress-header__link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </div>
         </adress>
       </div>
@@ -91,11 +112,31 @@
       <section>
         <div class="container">
           <ul class="buttons-portfolio">
-            <li><button class="buttons-portfolio__button" type="button">Wszystkie</button></li>
-            <li><button class="buttons-portfolio__button" type="button">Strony</button></li>
-            <li><button class="buttons-portfolio__button" type="button">Aplikacje</button></li>
-            <li><button class="buttons-portfolio__button" type="button">Dizajn</button></li>
-            <li><button class="buttons-portfolio__button" type="button">Marketing</button></li>
+            <li>
+              <button class="buttons-portfolio__button" type="button">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button class="buttons-portfolio__button" type="button">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button class="buttons-portfolio__button" type="button">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button class="buttons-portfolio__button" type="button">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button class="buttons-portfolio__button" type="button">
+                Marketing
+              </button>
+            </li>
           </ul>
         </div>
       </section>
@@ -107,9 +148,25 @@
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img8.jpg"
                   alt="Technocrack - Strona internetowa"
                 />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Technocrack - Strona internetowa"
+                  src="images/img8_450x294.jpg"
+                  srcset="images/img8_900x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Technocrack - Strona internetowa"
+                  src="images/img8_354x294.jpg"
+                  srcset="images/img8_708x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -125,9 +182,25 @@
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img9.jpg"
                   alt="Grafika New Orlean vs Golden Star - Dizajn"
                 />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Grafika New Orlean vs Golden Star - Dizajn"
+                  src="images/img9_354x294.jpg"
+                  srcset="images/img9_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Grafika New Orlean vs Golden Star - Dizajn"
+                  src="images/img9_450x294.jpg"
+                  srcset="images/img9_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -137,15 +210,33 @@
                   </p>
                 </div>
               </div>
-              <h3 class="portfolio__title">Grafika New Orlean vs Golden Star</h3>
+              <h3 class="portfolio__title">
+                Grafika New Orlean vs Golden Star
+              </h3>
               <p class="portfolio__short-description">Dizajn</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img10.jpg"
                   alt="Restauracja Seafood - Aplikacja"
                 />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Restauracja Seafood - Aplikacja"
+                  src="images/img10_354x294.jpg"
+                  srcset="images/img10_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Restauracja Seafood - Aplikacja"
+                  src="images/img10_450x294.jpg"
+                  srcset="images/img10_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -160,7 +251,26 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__item-box">
-                <img src="images/img11.jpg" alt="Projekt Prime - Marketing" />
+                <img
+                  class="portfolio__desktop-img"
+                  src="images/img11.jpg"
+                  alt="Projekt Prime - Marketing"
+                />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Projekt Prime - Marketing"
+                  src="images/img11_354x294.jpg"
+                  srcset="images/img11_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Projekt Prime - Marketing"
+                  src="images/img11_450x294.jpg"
+                  srcset="images/img11_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -175,7 +285,25 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__item-box">
-                <img src="images/img12.jpg" alt="Projekt Boxes - Aplikacja" />
+                <img
+                  class="portfolio__desktop-img"
+                  src="images/img12.jpg"
+                  alt="Projekt Boxes - Aplikacja"
+                />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Projekt Boxes - Aplikacja"
+                  src="images/img12_354x294.jpg"
+                  srcset="images/img12_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Projekt Boxes - Aplikacja"
+                  src="images/img12_450x294.jpg"
+                  srcset="images/img12_900x588.jpg 2x"
+                />
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -191,9 +319,25 @@
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img13.jpg"
                   alt="Inspiration has no Borders - Strona internetowa"
                 />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Inspiration has no Borders - Strona internetowa"
+                  src="images/img13_354x294.jpg"
+                  srcset="images/img13_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Inspiration has no Borders - Strona internetowa"
+                  src="images/img13_450x294.jpg"
+                  srcset="images/img13_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -209,9 +353,25 @@
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img14.jpg"
                   alt="Magazyn Limited Edition - Dizajn"
                 />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Magazyn Limited Edition - Dizajn"
+                  src="images/img14_354x294.jpg"
+                  srcset="images/img14_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Magazyn Limited Edition - Dizajn"
+                  src="images/img14_450x294.jpg"
+                  srcset="images/img14_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -226,7 +386,26 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__item-box">
-                <img src="images/img15.jpg" alt="Projekt LAB - Marketing" />
+                <img
+                  class="portfolio__desktop-img"
+                  src="images/img15.jpg"
+                  alt="Projekt LAB - Marketing"
+                />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Projekt LAB - Marketing"
+                  src="images/img15_354x294.jpg"
+                  srcset="images/img15_708x588.jpg 2x"
+                />
+
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Projekt LAB - Marketing"
+                  src="images/img15_450x294.jpg"
+                  srcset="images/img15_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -242,9 +421,24 @@
             <li class="portfolio__item">
               <div class="portfolio__item-box">
                 <img
+                  class="portfolio__desktop-img"
                   src="images/img16.jpg"
                   alt="Growing Business - Aplikacja"
                 />
+
+                <img
+                  class="portfolio__tablet-img"
+                  alt="Growing Business - Aplikacja"
+                  src="images/img16_354x294.jpg"
+                  srcset="images/img16_708x588.jpg 2x"
+                />
+                <img
+                  class="portfolio__mobile-img"
+                  alt="Growing Business - Aplikacja"
+                  src="images/img16_450x294.jpg"
+                  srcset="images/img16_900x588.jpg 2x"
+                />
+
                 <div class="portfolio__item-description">
                   <p class="portfolio__description-text">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -267,15 +461,12 @@
       <div class="container">
         <div class="footer__inline-container">
           <adress class="footer__adress">
-            <a
-            class="footer__logo"
-              href="./index.html"
-              title="WebStudio"
+            <a class="footer__logo" href="./index.html" title="WebStudio"
               ><span class="footer__accent">Web</span>Studio</a
             >
             <p class="footer__city-street">
-              m. Warszawa, Aleje Jerozolimskie 21</p
-            >
+              m. Warszawa, Aleje Jerozolimskie 21
+            </p>
 
             <!-- e-mail  -->
             <a class="footer__link" href="mailto:info@devstudio.com"
@@ -306,7 +497,12 @@
 
           <!--newsletter form section -->
           <div class="newsletter-signup">
-            <form class="newsletter-signup__form" name="newsletter_signup_form" autocomplete="on" novalidate>
+            <form
+              class="newsletter-signup__form"
+              name="newsletter_signup_form"
+              autocomplete="on"
+              novalidate
+            >
               <label>
                 <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
                 <input
@@ -317,13 +513,95 @@
                 />
               </label>
 
-              <button class="newsletter-signup__button" type="submit">Zapisz się</button>
+              <button class="newsletter-signup__button" type="submit">
+                Zapisz się
+              </button>
             </form>
           </div>
         </div>
-      </div>
+        <!--newsletter form section -->
+        <div class="newsletter-signup-tablet">
+          <form
+            class="newsletter-signup-tablet__form"
+            name="newsletter-signup-tablet_form"
+            autocomplete="on"
+            novalidate
+          >
+            <label>
+              <p class="newsletter-signup-tablet__label">
+                ZAPISZ SIĘ DO NEWSLETTERA
+              </p>
+              <input
+                class="newsletter-signup-tablet__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="newsletter-signup-tablet__button" type="submit">
+              Zapisz się
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__container js-menu-container">
+        <button class="mobile-menu__toggle js-close-menu link">
+          <svg width="24" height="24" viewBox="0 0 20 20">
+            <use href="./images/icons.svg#mobile-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__items">
+          <li>
+            <a href="./index.html" class="mobile-menu__link link">Agencja</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="" class="mobile-menu__link link">Kontakt</a></li>
+        </ul>
+
+        <address class="mobile-menu__adress">
+          <!-- phone -->
+          <a class="mobile-menu__adress-phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+
+          <!-- e-mail  -->
+          <a class="mobile-menu__adress-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </address>
+
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a href="" class="mobile-menu__socials-link link">Instagram</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a href="" class="mobile-menu__socials-link link">Twitter</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a href="" class="mobile-menu__socials-link link">Facebook</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a href="" class="mobile-menu__socials-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

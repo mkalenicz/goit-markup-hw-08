@@ -183,12 +183,11 @@ $colors: (
 }
 
 .modalCheckBoxFont {
-  font-weight: 400;
   text-align: left;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: map-get($colors, "secondary");
 }

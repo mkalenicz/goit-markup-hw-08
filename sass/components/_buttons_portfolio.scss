@@ -1,35 +1,53 @@
-  /* buttons-portfolio component  */
+/* buttons-portfolio component  */
 
+.buttons-portfolio {
+  padding-left: 0px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  margin-left: -8px;
+  margin-top: -8px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons-portfolio__button {
+  @extend .buttonPortfolioFont;
+  margin-right: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  background-color: map-get($colors, "sectionBackground");
+  border-color: map-get($colors, "sectionBackground");
+  border-radius: 4px;
+  width: 121px;
+  height: 38px;
+  border: 0px;
+
+  &:hover {
+    background-color: map-get($colors, "accent");
+    color: map-get($colors, "primaryLight");
+  }
+
+  &:focus {
+    background-color: map-get($colors, "accent");
+    color: map-get($colors, "primaryLight");
+  }
+}
+
+@media screen and (min-width: 768px) {
   .buttons-portfolio {
-    padding-left: 0px;
-    margin-top: 94px;
-    margin-bottom: 50px;
-    margin-left: -8px;
-    list-style: none;
-    display: flex;
     justify-content: center;
   }
-  
-  .buttons-portfolio__button {
-    @extend .buttonPortfolioFont;
-    margin-right: 8px;
-    cursor: pointer;
-    background-color: map-get($colors,'sectionBackground');
-    border-color: map-get($colors,'sectionBackground');
-    border-radius: 4px;
-    width: 121px;
-    height: 38px;
-    border: 0px;
-
-    &:hover {
-      background-color: map-get($colors,'accent');
-      color: map-get($colors,'primaryLight');
-    }
-    
-    &:focus {
-      background-color: map-get($colors,'accent');
-      color: map-get($colors,'primaryLight');
-    }
-
+}
+@media screen and (min-width: 1200px) {
+  .buttons-portfolio {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
   }
-  
+
+  .buttons-portfolio__button {
+    margin-top: 0;
+  }
+}
