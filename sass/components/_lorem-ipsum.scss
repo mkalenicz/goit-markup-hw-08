@@ -1,7 +1,10 @@
 /* lorem-ipsum component */
 .lorem-ipsum {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  // margin-top: 94px;
+  // margin-bottom: 94px;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
 
   &__list {
     list-style: none;
@@ -35,15 +38,6 @@
 
 @media screen and (min-width: 768px) {
   .lorem-ipsum {
-    //   &__item {
-    //        margin-left: 30px;
-    //   }
-
-    //   &__list {
-    //        margin-left: -30px;
-    //   }
-    // }
-
     &__container {
       width: 354px;
     }
@@ -56,6 +50,8 @@
 
 @media screen and (min-width: 1200px) {
   .lorem-ipsum {
+    margin-top: 94px;
+    margin-bottom: 94px;
     &__item {
       margin-left: 30px;
     }

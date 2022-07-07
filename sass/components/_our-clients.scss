@@ -6,17 +6,18 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    margin-top: -30px;
     margin-left: -30px;
-    margin-top: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
     padding: 0;
     list-style: none;
   }
 
   &__item {
     cursor: pointer;
-    width: 170px;
-    height: 90px;
+    width: 210px;
+    height: 92px;
+    margin-top: 30px;
     margin-left: 30px;
     display: flex;
     align-items: center;
@@ -38,13 +39,47 @@
     fill: map-get($colors, "secondary");
     margin: auto;
     height: 52px;
-    width: 170px;
+    width: 210px;
   }
 
   &__header {
     @extend .sectionHeaderFont;
     margin-top: 0;
-    padding-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients {
+    &__item {
+      width: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    &__list {
+      margin-top: 0px;
+      margin-bottom: 94px;
+    }
+    &__item {
+      margin-left: 30px;
+      width: 170px;
+      height: 90px;
+      margin-top: 0;
+    }
+    &__header {
+      padding-top: 94px;
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      fill: map-get($colors, "secondary");
+      margin: auto;
+      height: 52px;
+      width: 170px;
+    }
   }
 }
