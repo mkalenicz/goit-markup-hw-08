@@ -1,4 +1,5 @@
 .mobile-menu {
+  // display: none;
   &__items {
     padding: 0;
     margin: 0;
@@ -39,6 +40,7 @@
   }
   &__container {
     position: fixed;
+    // display: flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -89,6 +91,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
   }
   &__socials-link {
     @extend .mobileSocialsLinkFont;
@@ -102,5 +105,13 @@
 
   &__socials-item:last-child {
     border-right: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .mobile-menu {
+    &__adress-phone {
+      font-size: 28px;
+    }
   }
 }
