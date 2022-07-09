@@ -798,7 +798,6 @@
 }
 
 .footer__adress {
-  margin-right: -30px;
   text-align: center;
 }
 
@@ -1417,7 +1416,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw + 30px);
   height: 100vh;
   padding: 48px 40px 48px 40px;
   background-color: #ffffff;
