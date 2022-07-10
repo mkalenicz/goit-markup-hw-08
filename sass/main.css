@@ -218,7 +218,7 @@
 }
 
 .header__container {
-  width: 100vw;
+  width: calc(100vw - 23px);
   margin-left: 0;
   margin-right: 0;
   display: flex;
@@ -1520,6 +1520,13 @@
 body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   color: #757575;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  background-color: rgba(22, 23, 22, 0.2);
 }
 
 .link:hover {

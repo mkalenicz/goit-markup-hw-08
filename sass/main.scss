@@ -19,14 +19,19 @@
 body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   color: map-get($colors, "secondary");
+  // overflow: hidden;
 }
 
-// *,
-// ::after,
-// ::before {
-//   box-sizing: border-box;
-//   background-color: rgba(22, 23, 22, 0.2);
+// body::-webkit-scrollbar {
+//   display: none;
 // }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  background-color: rgba(22, 23, 22, 0.2);
+}
 
 .link {
   &:hover {
