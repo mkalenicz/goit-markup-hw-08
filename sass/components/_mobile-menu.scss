@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   &__link {
@@ -40,6 +40,8 @@
   }
   &__container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: calc(100vw + 30px);

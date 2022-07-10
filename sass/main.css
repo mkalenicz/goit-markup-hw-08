@@ -1065,6 +1065,7 @@
 
 /* modal window  */
 .modal {
+  margin-left: 15px;
   position: absolute;
   top: 50%;
   left: calc(50% - 15px);
@@ -1209,7 +1210,8 @@
 
 @media screen and (min-width: 768px) {
   .modal {
-    left: 50%;
+    width: 450px;
+    min-height: 581px;
   }
 }
 
@@ -1378,7 +1380,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu__link {
@@ -1413,6 +1415,8 @@
 
 .mobile-menu__container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: calc(100vw + 30px);

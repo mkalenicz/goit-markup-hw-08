@@ -1,5 +1,6 @@
 /* modal window  */
 .modal {
+  margin-left: 15px;
   position: absolute;
   top: 50%;
   left: calc(50% - 15px);
@@ -154,7 +155,8 @@
 
 @media screen and (min-width: 768px) {
   .modal {
-    left: 50%;
+    width: 450px;
+    min-height: 581px;
   }
 }
 @media screen and (min-width: 1200px) {
