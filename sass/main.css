@@ -215,10 +215,12 @@
 /* header component */
 .header {
   border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
 }
 
 .header__container {
-  width: calc(100vw - 23px);
+  width: 100vw;
   margin-left: 0;
   margin-right: 0;
   display: flex;

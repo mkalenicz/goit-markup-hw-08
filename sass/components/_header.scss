@@ -1,9 +1,12 @@
 /* header component */
 .header {
   border-bottom: 1px solid map-get($colors, "headerBorder");
+  display: flex;
+  justify-content: center;
 
   &__container {
-    width: calc(100vw - 23px);
+    // width: calc(100vw - 23px);
+    width: 100vw;
     margin-left: 0;
     margin-right: 0;
     display: flex;
