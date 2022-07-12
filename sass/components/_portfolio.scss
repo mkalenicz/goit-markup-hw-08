@@ -62,7 +62,9 @@
   position: relative;
   margin-left: 30px;
   margin-bottom: 30px;
-  width: 450px;
+  // width: 450px;
+  width: 100vw;
+  max-width: 450px;
   background-color: map-get($colors, "primaryLight");
   border: 1px solid map-get($colors, "portfolioBorder");
   overflow: hidden;
@@ -73,7 +75,11 @@
   }
 
   &-description {
-    padding: 77px 24px 77px 24px;
+    padding-left: 0;
+    padding-right: 0;
+
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -83,6 +89,15 @@
     opacity: 0.9;
     transform: translatey(100%);
     transition: transform 250ms ease;
+  }
+}
+
+@media screen and (min-width: 327px) {
+  .portfolio__item {
+    &-description {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 }
 

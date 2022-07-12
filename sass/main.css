@@ -1291,7 +1291,8 @@
   position: relative;
   margin-left: 30px;
   margin-bottom: 30px;
-  width: 450px;
+  width: 100vw;
+  max-width: 450px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   overflow: hidden;
@@ -1302,7 +1303,10 @@
 }
 
 .portfolio__item-description {
-  padding: 77px 24px 77px 24px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -1312,6 +1316,13 @@
   opacity: 0.9;
   transform: translatey(100%);
   transition: transform 250ms ease;
+}
+
+@media screen and (min-width: 327px) {
+  .portfolio__item-description {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
