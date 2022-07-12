@@ -363,10 +363,11 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: url("../images/bannerImgOverlay.png"), url("../images/bannerImg_480x400.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bannerImg_480x400.jpg");
   background-position: center, center;
-  background-size: 480px 400px;
-  max-width: 480px;
+  background-size: 100%;
+  max-width: 100%;
+  min-height: 400px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -403,22 +404,20 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: url("../images/bannerImgOverlay.png"), url("../images/bannerImg_960x800.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bannerImg_960x800.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("../images/bannerImgOverlay.png"), url("../images/bannerImg_768x400.jpg");
-    background-size: 768px 400px;
-    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bannerImg_768x400.jpg");
     background-position: center, center;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: url("../images/bannerImgOverlay.png"), url("../images/bannerImg_1536x800.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bannerImg_1536x800.jpg");
   }
 }
 
@@ -426,7 +425,7 @@
   .banner {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/bannerImgOverlay.png"), url("../images/bannerImg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bannerImg.jpg");
     background-size: 100% 600px;
     max-width: 1600px;
     background-position: center, center;
